@@ -1,0 +1,75 @@
+/* Outer container */
+.footer_outer_container {
+  background-color: #141414; /* dark Netflix footer */
+  color: #757575;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+/* Inner container */
+.footer_inner_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Social media icons */
+.footer_icons {
+
+width: 15%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    color: white;
+}
+
+
+/* Footer links in multiple columns */
+.footer_data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.footer_data div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_data div ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer_data div ul li:hover {
+  color: white;
+}
+
+/* Service code button */
+.service_code {
+  margin: 10px 0;
+  align-items: center;
+  color: #757575;
+  justify-content: center;
+  border: 1px solid #757575;
+  display: flex;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.service_code:hover {
+  color: white;
+  border-color: white;
+}
+
+/* Copyright */
+.copy_write {
+  margin-top: 10px;
+  color: #757575;
+  font-size: 13px;
+}

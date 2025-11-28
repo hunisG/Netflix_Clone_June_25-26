@@ -1,0 +1,19 @@
+/* index.css or App.css */
+
+/* Make the whole page black */
+body {
+  margin: 0;           /* remove default spacing */
+  padding: 0;
+  background-color: #000;  /* black background */
+  color: white;        /* default text color white for contrast */
+  font-family: Arial, sans-serif;  /* optional */
+}
+
+/* Make root div full height */
+#root {
+  min-height: 100vh;  /* full viewport height */
+}
+/* Ensure all containers fill the screen */
+* {
+  box-sizing: border-box;
+}
