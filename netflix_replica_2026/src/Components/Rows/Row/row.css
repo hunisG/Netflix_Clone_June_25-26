@@ -1,0 +1,119 @@
+Main row container
+.row {
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+/* Row title */
+.row h2 {
+  margin-left: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Horizontal scrolling container */
+.row_posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px 10px;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar */
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* Normal movie poster */
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 140px;
+  margin-right: 12px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Hover effect */
+.row_poster:hover {
+  transform: scale(1.1);
+}
+
+/* Large row (Netflix Originals) */
+.row_posterLarge {
+  max-height: 260px;
+}
+
+/* Stronger hover for large posters */
+.row_posterLarge:hover {
+  transform: scale(1.12);
+}
+
+/* ===========================
+   Trailer Player Container
+   =========================== */
+.row_trailer {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* YouTube iframe inside trailer */
+.row_trailer iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Message when no trailer is available */
+.no_trailer_message {
+  color: #ddd;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Smooth fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile trailer size */
+@media (max-width: 768px) {
+  .row_trailer iframe {
+    height: 220px;
+  }
+}
+
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .row_poster {
+    max-height: 100px;
+  }
+
+  .row_posterLarge {
+    max-height: 180px;
+  }
+
+  .row h2 {
+    font-size: 1.1rem;
+  }
+
+}
